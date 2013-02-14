@@ -30,17 +30,26 @@ class HanaConnector(DBConnector):
             return con
 
 
-    def fireSQLStatement(self, statement):
+    def fireQuery(self, query, queryid=0):
         try:
             try:
                 con = cls.getconn()
                 cur = con.cursor()
-                cur.execute(statement)
+                cur.execute(query)
             except dbapi.Error, err:
                 print err
         finally:
             cur.close()
             con.close()
+
+    # @classmethod
+    # def fireSQLStatementsFromFile(cls, filename):
+    #     file = open(filename, 'r')
+    #     statement = file.readline()
+    #     while statement:
+    #         cls.fireSQLStatement(statement)
+    #         statement = file.readline()
+
 
 
 

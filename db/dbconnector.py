@@ -19,7 +19,7 @@ class DBConnector(object):
 
 
 	@abc.abstractmethod
-	def fireSQLStatement():
+	def fireQuery(self, query, queryid=0):
 		"""Execute Query"""
 		return 
 
