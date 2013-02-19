@@ -3,6 +3,11 @@ from jmetersummary import JMeterSummary
 from sqlutil import SQLUtil
 import os
 
+
+import time
+int(time.time())
+
+
 parser = OptionParser()
 parser.add_option("-j", "--jmeterdir", dest="jmeterdir", help = "jmeter directory")
 parser.add_option("-t", "--jmetertestplan", dest="jmetertestplan", help = "jmeter testplan")
