@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="2.9 r1437961">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Config with Parameters" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="utctimestamp" elementType="Argument">
+            <stringProp name="Argument.name">utctimestamp</stringProp>
+            <stringProp name="Argument.value">${__P(utctimestamp)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="r1" elementType="Argument">
+            <stringProp name="Argument.name">r1</stringProp>
+            <stringProp name="Argument.value">${__P(r1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="r2" elementType="Argument">
+            <stringProp name="Argument.name">r2</stringProp>
+            <stringProp name="Argument.value">${__P(r2)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="r3" elementType="Argument">
+            <stringProp name="Argument.name">r3</stringProp>
+            <stringProp name="Argument.value">${__P(r3)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">${__P(host)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">${__P(port)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="user" elementType="Argument">
+            <stringProp name="Argument.name">user</stringProp>
+            <stringProp name="Argument.value">${__P(user)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="password" elementType="Argument">
+            <stringProp name="Argument.name">password</stringProp>
+            <stringProp name="Argument.value">${__P(password)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="threads" elementType="Argument">
+            <stringProp name="Argument.name">threads</stringProp>
+            <stringProp name="Argument.value">${__P(threads)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="duration" elementType="Argument">
+            <stringProp name="Argument.name">duration</stringProp>
+            <stringProp name="Argument.value">${__P(duration)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Config" enabled="false">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="utctimestamp" elementType="Argument">
+            <stringProp name="Argument.name">utctimestamp</stringProp>
+            <stringProp name="Argument.value">1347026404</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="r1" elementType="Argument">
+            <stringProp name="Argument.name">r1</stringProp>
+            <stringProp name="Argument.value">900</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="r2" elementType="Argument">
+            <stringProp name="Argument.name">r2</stringProp>
+            <stringProp name="Argument.value">2700</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="r3" elementType="Argument">
+            <stringProp name="Argument.name">r3</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">lu00340957.xxp.sap.corp</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">30015</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="user" elementType="Argument">
+            <stringProp name="Argument.name">user</stringProp>
+            <stringProp name="Argument.value">SYSTEM</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="password" elementType="Argument">
+            <stringProp name="Argument.name">password</stringProp>
+            <stringProp name="Argument.value">cubits4You</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="threads" elementType="Argument">
+            <stringProp name="Argument.name">threads</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="duration" elementType="Argument">
+            <stringProp name="Argument.name">duration</stringProp>
+            <stringProp name="Argument.value">60</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery">Select 1</stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="dataSource">DB</stringProp>
+        <stringProp name="dbUrl">jdbc:sap://${host}:${port}</stringProp>
+        <stringProp name="driver">com.sap.db.jdbc.Driver</stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password">${password}</stringProp>
+        <stringProp name="poolMax">128</stringProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username">${user}</stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">2</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1313601584000</longProp>
+        <longProp name="ThreadGroup.end_time">1313601584000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.duration">${duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Select 1" enabled="true">
+          <stringProp name="dataSource">DB</stringProp>
+          <stringProp name="query">SELECT Count(Ifnull(mysum, 0)),
+       ${utctimestamp}
+FROM   (SELECT uc00.&quot;uid&quot;,
+               uc00.&quot;pid&quot;
+        FROM   (SELECT &quot;uid&quot;,
+                       &quot;pid&quot;
+                FROM   benchmark.farm
+                WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                      - ${r1}
+                                      - ${__Random(0,${r2})} AND
+                         ${utctimestamp}                                    
+                       AND ( 1 = &apos;1&apos; )
+                GROUP  BY &quot;uid&quot;,
+                          &quot;pid&quot;) AS uc00) AS uc0
+       LEFT JOIN (SELECT ucm0.&quot;uid&quot;,
+                         ucm0.&quot;pid&quot;,
+                         mysum
+                  FROM   (SELECT &quot;uid&quot;,
+                                 &quot;pid&quot;,
+                                 Count(1) AS mysum
+                          FROM   benchmark.farm
+                          WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                - ${r1}
+                                                - ${__Random(0,${r2})} AND                             
+                                 ${utctimestamp}
+                                 - 0
+                                 AND ( 1 = &apos;1&apos; )
+                          GROUP  BY &quot;uid&quot;,
+                                    &quot;pid&quot;) AS ucm0) AS ucm
+              ON uc0.&quot;uid&quot; = ucm.&quot;uid&quot;
+                 AND uc0.&quot;pid&quot; = ucm.&quot;pid&quot;  
+
+
+</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Select 2" enabled="true">
+          <stringProp name="dataSource">DB</stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="query"> SELECT Count(Ifnull(mysum, 0)),
+       ${utctimestamp}
+FROM   (SELECT uc00.&quot;uid&quot;,
+               uc00.&quot;pid&quot;
+        FROM   (SELECT &quot;uid&quot;,
+                       &quot;pid&quot;
+                FROM   benchmark.farm
+                WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                      - ${r1}
+                                      - ${__Random(0,${r2})} AND
+                                              ${utctimestamp} - ${r3}
+                       AND ( 1 = &apos;1&apos; )
+                GROUP  BY &quot;uid&quot;,
+                          &quot;pid&quot;) AS uc00) AS uc0
+       JOIN (SELECT uc11.&quot;uid&quot;,
+                    uc11.&quot;pid&quot;
+             FROM   (SELECT &quot;uid&quot; AS &quot;uid&quot;,
+                            &quot;pid&quot; AS &quot;pid&quot;
+                     FROM   evelyn_streams.v_payment
+                     WHERE  ( 1 = &apos;1&apos; )) AS uc10
+                    JOIN (SELECT &quot;uid&quot;,
+                                 &quot;pid&quot;
+                          FROM   benchmark.farm
+                          WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                - ${r1}
+                                                - ${__Random(0,${r2})} AND
+                                 ${utctimestamp} - ${r3}
+                                 AND ( 1 = &apos;1&apos; )
+                          GROUP  BY &quot;uid&quot;,
+                                    &quot;pid&quot;) AS uc11
+                      ON uc10.&quot;uid&quot; = uc11.&quot;uid&quot;
+                         AND uc10.&quot;pid&quot; = uc11.&quot;pid&quot;) AS uc1
+         ON uc0.&quot;uid&quot; = uc1.&quot;uid&quot;
+            AND uc0.&quot;pid&quot; = uc1.&quot;pid&quot;
+       LEFT JOIN (SELECT ucm0.&quot;uid&quot;,
+                         ucm0.&quot;pid&quot;,
+                         mysum
+                  FROM   (SELECT &quot;uid&quot;,
+                                 &quot;pid&quot;,
+                                 Count(1) AS mysum
+                          FROM   benchmark.farm
+                          WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                - ${r1}
+                                                - ${__Random(0,${r2})} AND
+                                 ${utctimestamp} - ${r3}
+                                 AND ( 1 = &apos;1&apos; )
+                          GROUP  BY &quot;uid&quot;,
+                                    &quot;pid&quot;) AS ucm0) AS ucm
+              ON uc0.&quot;uid&quot; = ucm.&quot;uid&quot;
+                 AND uc0.&quot;pid&quot; = ucm.&quot;pid&quot;  </stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Select 3" enabled="true">
+          <stringProp name="dataSource">DB</stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="query">SELECT Sum(Ifnull(mysum, 0)),
+       ${utctimestamp}
+FROM   (SELECT uc00.&quot;uid&quot;,
+               uc00.&quot;pid&quot;
+        FROM   (SELECT &quot;uid&quot;,
+                       &quot;pid&quot;
+                FROM   benchmark.farm
+                WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                      - ${r1}
+                                      - ${__Random(0,${r2})} AND
+                                              ${utctimestamp} - ${r3}
+                       AND ( 1 = &apos;1&apos; )
+                GROUP  BY &quot;uid&quot;,
+                          &quot;pid&quot;) AS uc00) AS uc0
+       INNER JOIN (SELECT uc11.&quot;uid&quot;,
+                          uc11.&quot;pid&quot;
+                   FROM   (SELECT &quot;uid&quot; AS &quot;uid&quot;,
+                                  &quot;pid&quot; AS &quot;pid&quot;
+                           FROM   evelyn_streams.v_payment
+                           WHERE  ( 1 = &apos;1&apos; )) AS uc10
+                          INNER JOIN (SELECT &quot;uid&quot;,
+                                             &quot;pid&quot;
+                                      FROM   benchmark.farm
+                                      WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                            - ${r1}
+                                                            - ${__Random(0,${r2})} AND
+                                             ${utctimestamp} - ${r3}
+                                             AND ( 1 = &apos;1&apos; )
+                                      GROUP  BY &quot;uid&quot;,
+                                                &quot;pid&quot;) AS uc11
+                                  ON uc10.&quot;uid&quot; = uc11.&quot;uid&quot;
+                                     AND uc10.&quot;pid&quot; = uc11.&quot;pid&quot;) AS uc1
+               ON uc0.&quot;uid&quot; = uc1.&quot;uid&quot;
+                  AND uc0.&quot;pid&quot; = uc1.&quot;pid&quot;
+       LEFT JOIN (SELECT ucm0.&quot;uid&quot;,
+                         ucm0.&quot;pid&quot;,
+                         mysum
+                  FROM   (SELECT &quot;uid&quot;,
+                                 &quot;pid&quot;,
+                                 Sum(&quot;st_amountEuroValue&quot;) AS mysum
+                          FROM   evelyn_streams.payment
+                          WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                - ${r1}
+                                                - ${__Random(0,${r2})} AND
+                                 ${utctimestamp} - ${r3}
+                                 AND ( 1 = &apos;1&apos; )
+                          GROUP  BY &quot;uid&quot;,
+                                    &quot;pid&quot;) AS ucm0) AS ucm
+              ON uc0.&quot;uid&quot; = ucm.&quot;uid&quot;
+                 AND uc0.&quot;pid&quot; = ucm.&quot;pid&quot;  </stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Select 4" enabled="true">
+          <stringProp name="dataSource">DB</stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="query"> SELECT Count(Ifnull(mysum, 0)),
+       ${utctimestamp}
+FROM   (SELECT uc00.&quot;uid&quot;,
+               uc00.&quot;pid&quot;
+        FROM   (SELECT &quot;uid&quot;,
+                       &quot;pid&quot;
+                FROM   benchmark.farm
+                WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                      - ${r1}
+                                      - ${__Random(0,${r2})} AND
+                                              ${utctimestamp} - ${r3}
+                       AND ( 1 = &apos;1&apos; )
+                GROUP  BY &quot;uid&quot;,
+                          &quot;pid&quot;) AS uc00) AS uc0
+       INNER JOIN (SELECT uc10.&quot;uid&quot;,
+                          uc10.&quot;pid&quot;
+                   FROM   (SELECT ingameid AS &quot;uid&quot;,
+                                  pid      AS &quot;pid&quot;
+                           FROM   bigpoint.&quot;GameMembers&quot;
+                           WHERE  ( geoipcntry LIKE &apos;DE&apos; )) AS uc10) AS uc1
+               ON uc0.&quot;uid&quot; = uc1.&quot;uid&quot;
+                  AND uc0.&quot;pid&quot; = uc1.&quot;pid&quot;
+       LEFT JOIN (SELECT ucm0.&quot;uid&quot;,
+                         ucm0.&quot;pid&quot;,
+                         mysum
+                  FROM   (SELECT &quot;uid&quot;,
+                                 &quot;pid&quot;,
+                                 Count(1) AS mysum
+                          FROM   benchmark.farm
+                          WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                - ${r1}
+                                                - ${__Random(0,${r2})} AND
+                                 ${utctimestamp} - ${r3}
+                                 AND ( 1 = &apos;1&apos; )
+                          GROUP  BY &quot;uid&quot;,
+                                    &quot;pid&quot;) AS ucm0) AS ucm
+              ON uc0.&quot;uid&quot; = ucm.&quot;uid&quot;
+                 AND uc0.&quot;pid&quot; = ucm.&quot;pid&quot;  </stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="Select 5" enabled="true">
+          <stringProp name="dataSource">DB</stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="query"> SELECT Count(Ifnull(mysum, 0)),${utctimestamp}
+FROM   (SELECT uc00.&quot;uid&quot;,
+               uc00.&quot;pid&quot;
+        FROM   (SELECT &quot;uid&quot;,
+                       &quot;pid&quot;
+                FROM   benchmark.farm
+                WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                      - ${r1}
+                                      - ${__Random(0,${r2})} AND
+                                              ${utctimestamp}
+                                              - ${r3}
+                       AND ( 1 = &apos;1&apos; )
+                GROUP  BY &quot;uid&quot;,
+                          &quot;pid&quot;) AS uc00)AS uc0
+       JOIN (SELECT uc10.&quot;uid&quot;,
+                    uc10.&quot;pid&quot;
+             FROM   (SELECT ingameid AS &quot;uid&quot;,
+                            pid      AS &quot;pid&quot;
+                     FROM   bigpoint.&quot;GameMembers&quot;
+                     WHERE  ( geoipcntry = &apos;DE&apos; )
+                            AND ( regdatum &gt; &apos;2010-01-01&apos; )) AS uc10) AS uc1
+         ON uc0.&quot;uid&quot; = uc1.&quot;uid&quot;
+            AND uc0.&quot;pid&quot; = uc1.&quot;pid&quot;
+       LEFT JOIN (SELECT ucm0.&quot;uid&quot;,
+                         ucm0.&quot;pid&quot;,
+                         mysum
+                  FROM   (SELECT &quot;uid&quot;,
+                                 &quot;pid&quot;,
+                                 Count(1) AS mysum
+                          FROM   benchmark.farm
+                          WHERE  &quot;time&quot; BETWEEN ${utctimestamp}
+                                                - ${r1}
+                                                - ${__Random(0,${r2})} AND
+                                 ${utctimestamp}
+                                 - ${r3}
+                                 AND ( 1 = &apos;1&apos; )
+                          GROUP  BY &quot;uid&quot;,
+                                    &quot;pid&quot;) AS ucm0)AS ucm
+              ON uc0.&quot;uid&quot; = ucm.&quot;uid&quot;
+                 AND uc0.&quot;pid&quot; = ucm.&quot;pid&quot;  </stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Merger" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1360778740000</longProp>
+        <longProp name="ThreadGroup.end_time">1360778740000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">3</stringProp>
+        </LoopController>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">120000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="MERGE DELTA INDEX" enabled="true">
+            <stringProp name="dataSource">DB</stringProp>
+            <stringProp name="queryType">Update Statement</stringProp>
+            <stringProp name="query"></stringProp>
+            <stringProp name="queryArguments"></stringProp>
+            <stringProp name="queryArgumentsTypes"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="resultVariable"></stringProp>
+          </JDBCSampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\I828884\Desktop\Benchmark\error</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
